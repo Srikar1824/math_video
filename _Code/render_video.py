@@ -761,19 +761,29 @@ def _scene6(img, draw, t):
                  WIDTH / 2.0, 248, F26B, _lerp_c(BG, GREEN, ac))
     draw.line([(200, 306), (WIDTH - 200, 306)], fill=_lerp_c(BG, BOX_BORDER, ac), width=2)
 
-    # Student details — centered on the full card
-    clx = 420
-    draw.text((clx, 344), "STUDENT DETAILS", fill=_lerp_c(BG, BLUE, ac), font=F22B)
-    draw.line([(clx, 386), (clx + 700, 386)], fill=_lerp_c(BG, BOX_BORDER, ac), width=1)
+    lx = 200
+    draw.text((lx, 344), "STUDENT", fill=_lerp_c(BG, BLUE, ac), font=F22B)
     for y, lab, val in [
-        (410, "Name:",   "Srikar Burgu"),
-        (460, "ID:",     "E25B070605"),
-        (510, "Course:", "Linear Algebra & Calculus (M3)"),
-        (560, "Type:",   "10% Internal Assessment"),
-        (610, "Voice:",  "Srikar Burgu (original narration)"),
+        (392, "Name:",   "Srikar Burgu"),
+        (438, "ID:",     "E25B070605"),
+        (484, "Course:", "Linear Algebra & Calculus (M3)"),
+        (530, "Type:",   "10% Internal Assessment"),
+        (576, "Voice:",  "Srikar Burgu (original narration)"),
     ]:
-        draw.text((clx,       y), lab, fill=_lerp_c(BG, MUTED, ac), font=F24B)
-        draw.text((clx + 190, y), val, fill=_lerp_c(BG, WHITE, ac), font=F24B)
+        draw.text((lx, y),       lab, fill=_lerp_c(BG, MUTED, ac), font=F22)
+        draw.text((lx + 150, y), val, fill=_lerp_c(BG, WHITE, ac), font=F22B)
+
+    rx = 980
+    draw.text((rx, 344), "PRODUCTION & AI DISCLOSURE", fill=_lerp_c(BG, GOLD, ac), font=F22B)
+    for y, lab, val in [
+        (392, "Code:",       "Python · Pillow · NumPy · Manim"),
+        (438, "Render:",     "FFmpeg 9.1  (1920×1080  30fps)"),
+        (484, "Alignment:",  "Whisper.cpp transcript timing"),
+        (530, "AI Tools:",   "Script & animation code assistance"),
+        (576, "Storyboard:", "6-scene PDF included in submission"),
+    ]:
+        draw.text((rx, y),       lab, fill=_lerp_c(BG, MUTED, ac), font=F22)
+        draw.text((rx + 185, y), val, fill=_lerp_c(BG, WHITE, ac), font=F22B)
 
     _center_text(draw, "Prepared for M3 Evaluation  •  November 2026",
                  WIDTH / 2.0, 880, F20, _lerp_c(BG, MUTED, ac))

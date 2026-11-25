@@ -1,7 +1,8 @@
-# Videos & audio (excluded per user instruction)
+# Videos, audio, and personal study notes (excluded from repo)
 *.mp4
 *.mp3
 *.wav
+Viva_Defense_Notes.md
 
 # Temporary root scripts (finalized version is in _Code/render_video.py)
 render_v2.py

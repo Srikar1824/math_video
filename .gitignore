@@ -1,0 +1,13 @@
+# Videos & audio (excluded per user instruction)
+*.mp4
+*.mp3
+*.wav
+
+# Temporary root scripts (finalized version is in _Code/render_video.py)
+render_v2.py
+render_v3.py
+
+# Python & OS artifacts
+__pycache__/
+*.pyc
+.DS_Store

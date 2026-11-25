@@ -17,6 +17,7 @@
   - [`_Code/manim_eigenvalues.py`](_Code/manim_eigenvalues.py) — Equivalent Manim Community scene script (`EigenvaluesFullVideo`).
   - [`_Code/requirements.txt`](_Code/requirements.txt) — Python dependencies.
 - [`Storyboard/Storyboard.pdf`](Storyboard/Storyboard.pdf) — Official 6-scene storyboard PDF (and [`Storyboard.md`](Storyboard/Storyboard.md)).
+- [`Preview/`](Preview/) — High-resolution slide & scene previews covering the complete video progression.
 
 ---
 
